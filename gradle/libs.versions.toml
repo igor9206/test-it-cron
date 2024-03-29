@@ -1,0 +1,54 @@
+[versions]
+agp = "8.3.1"
+kotlin = "1.9.22"
+coreKtx = "1.12.0"
+junit = "4.13.2"
+junitVersion = "1.1.5"
+espressoCore = "3.5.1"
+appcompat = "1.6.1"
+material = "1.11.0"
+activity = "1.8.2"
+constraintlayout = "2.1.4"
+
+navVersion = "2.7.7"
+recyclerVersion = "1.3.2"
+hiltVersion = "2.51"
+roomVersion = "2.6.1"
+retrofitVersion = "2.10.0"
+pagingVersion = "3.2.1"
+swipeRefreshVersion = "1.2.0-alpha01"
+gsonVersion = "2.10.1"
+glideVersion = "4.16.0"
+
+[libraries]
+navigation-fragment = { group = "androidx.navigation", name = "navigation-fragment-ktx", version.ref = "navVersion" }
+navigation-ui = { group = "androidx.navigation", name = "navigation-ui-ktx", version.ref = "navVersion" }
+recycler-view = { group = "androidx.recyclerview", name = "recyclerview", version.ref = "recyclerVersion" }
+dagger-hilt = { group = "com.google.dagger", name = "hilt-android", version.ref = "hiltVersion" }
+kapt-hilt = { group = "com.google.dagger", name = "hilt-android-compiler", version.ref = "hiltVersion" }
+room = { group = "androidx.room", name = "room-runtime", version.ref = "roomVersion" }
+room-coroutines = { group = "androidx.room", name = "room-ktx", version.ref = "roomVersion" }
+room-pagin = { group = "androidx.room", name = "room-paging", version.ref = "roomVersion" }
+kapt-room = { group = "androidx.room", name = "room-compiler", version.ref = "roomVersion" }
+retrofit = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofitVersion" }
+paging = { group = "androidx.paging", name = "paging-runtime", version.ref = "pagingVersion" }
+swipe-refresh = { group = "androidx.swiperefreshlayout", name = "swiperefreshlayout", version.ref = "swipeRefreshVersion" }
+google-gson = { group = "com.google.code.gson", name = "gson", version.ref = "gsonVersion" }
+gson-converter = { group = "com.squareup.retrofit2", name = "converter-gson", version.ref = "retrofitVersion" }
+glide = { group = "com.github.bumptech.glide", name = "glide", version.ref = "glideVersion" }
+
+
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
+androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+
+[plugins]
+androidApplication = { id = "com.android.application", version.ref = "agp" }
+jetbrainsKotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+
+daggerHilt = { id = "com.google.dagger.hilt.android", version.ref = "hiltVersion" }
