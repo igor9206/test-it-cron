@@ -13,9 +13,6 @@ interface UserDao {
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun insertAll(users: List<UserEntity>)
 
-    @Insert
-    suspend fun insert(users: List<UserEntity>)
-
     @Query("SELECT * FROM UserEntity ORDER BY id ASC")
     fun pagingSource(): PagingSource<Int, UserEntity>
 
