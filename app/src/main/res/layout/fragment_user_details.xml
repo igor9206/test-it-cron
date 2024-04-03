@@ -59,8 +59,8 @@
         app:icon="@drawable/ic_group_24"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/ivAvatar"
-        tools:text="text"
-        tools:ignore="RtlSymmetry" />
+        tools:ignore="RtlSymmetry"
+        tools:text="text" />
 
     <Button
         android:id="@+id/following"
@@ -75,8 +75,8 @@
         app:layout_constraintBottom_toBottomOf="@id/follower"
         app:layout_constraintStart_toEndOf="@id/follower"
         app:layout_constraintTop_toTopOf="@id/follower"
-        tools:text="text"
-        tools:ignore="RtlSymmetry" />
+        tools:ignore="RtlSymmetry"
+        tools:text="text" />
 
     <Button
         android:id="@+id/organization"

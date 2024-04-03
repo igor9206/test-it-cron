@@ -33,20 +33,20 @@ class MainFragment : Fragment() {
             override fun openCard(userLogin: String) {
                 findNavController().navigate(
                     R.id.action_mainFragment_to_userDetailsFragment,
-                    bundleOf( "login" to userLogin)
+                    bundleOf("login" to userLogin)
                 )
             }
 
         })
         binding.rvUsers.adapter = adapter
 
-        lifecycleScope.launch {
+        viewLifecycleOwner.lifecycleScope.launch {
             userViewModel.userData.collectLatest {
                 adapter.submitData(it)
             }
         }
 
-        lifecycleScope.launch {
+        viewLifecycleOwner.lifecycleScope.launch {
             adapter.loadStateFlow.collectLatest {
                 binding.srl.isRefreshing = it.refresh is LoadState.Loading
             }

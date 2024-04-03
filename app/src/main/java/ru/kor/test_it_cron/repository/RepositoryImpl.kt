@@ -23,7 +23,7 @@ class RepositoryImpl @Inject constructor(
 ) : Repository {
 
     override val userData: Flow<PagingData<User>> = Pager(
-        config = PagingConfig(15, enablePlaceholders = false),
+        config = PagingConfig(15),
         pagingSourceFactory = { userDao.pagingSource() },
         remoteMediator = userRemoteMediator
     ).flow
